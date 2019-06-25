@@ -12,7 +12,7 @@ global-js:
   js:
     js/min/global.min.js: {}
     js/min/base/global.min.js: {}
-    /libraries/popper.js/dist/umd/popper.min.js: { weight: -20 } # Required by Bootstrap 4
+    /profiles/contrib/droopler/libraries/popper.js/dist/umd/popper.min.js: { weight: -20 } # Required by Bootstrap 4
     js/min/base/bootstrap.min.js: {}
   dependencies:
     - core/jquery
@@ -40,7 +40,7 @@ maintenance_page:
     - droopler_theme/global-styling
     
 ## Uncomment this to enable Font Awesome support.
-## Look into droopler_subtheme.info.yml too.
+## Look into droopler_dorg_subtheme.info.yml too.
 
 # font-awesome:
 #   remote: https://fortawesome.github.io/Font-Awesome/

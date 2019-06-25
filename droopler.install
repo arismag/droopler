@@ -35,10 +35,11 @@ function droopler_install() {
         ->set('default', 'droopler_dorg_subtheme')
         ->set('admin', 'seven')
         ->save();
-    } elseif (isset($themes['droopler_subtheme'])) {
+    }
+    elseif (isset($themes['droopler_dorg_subtheme'])) {
       \Drupal::configFactory()
         ->getEditable('system.theme')
-        ->set('default', 'droopler_subtheme')
+        ->set('default', 'droopler_dorg_subtheme')
         ->set('admin', 'seven')
         ->save();
     }
@@ -54,7 +55,7 @@ function droopler_install() {
 
   // If subtheme is available install the blog.
   // @TODO this should not really be here because this subtheme is not part of the distribution
-  if (isset($themes['droopler_subtheme'])) {
+  if (isset($themes['droopler_dorg_subtheme']) || isset($themes['droopler_subtheme'])) {
     \Drupal::service('module_installer')->install(['d_blog']);
     \Drupal::service('module_installer')->install(['d_blog_init']);
 
