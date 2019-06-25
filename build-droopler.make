@@ -4,4 +4,4 @@ includes[] = drupal-org-core.make
 includes[] = drupal-org.make
 projects[droopler][type] = profile
 projects[droopler][download][type] = git
-projects[droopler][download][branch] = 8.x-5.x
+projects[droopler][download][branch] = 8.x-6.x
