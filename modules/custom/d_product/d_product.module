@@ -199,7 +199,6 @@ function d_product_generate_ask_product_link($node) {
     t($name),
     Url::fromUri('internal:/contact#contact-message-feedback-form', $options)
   )->toRenderable();
-
   $link['#attributes'] = ['class' => ['btn btn-outline-primary']];
   return $link;
 }
