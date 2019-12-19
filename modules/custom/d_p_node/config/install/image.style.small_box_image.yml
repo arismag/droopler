@@ -4,10 +4,18 @@ dependencies: {  }
 name: small_box_image
 label: 'Small box image'
 effects:
-  51e74f9e-3f1a-4fc5-a79e-fc5eedfa9136:
-    uuid: 51e74f9e-3f1a-4fc5-a79e-fc5eedfa9136
-    id: image_scale_and_crop
-    weight: 1
+  9ff6e497-42a8-44fe-ad58-af37c9cc47a9:
+    uuid: 9ff6e497-42a8-44fe-ad58-af37c9cc47a9
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 370
+      upscale: false
+  9efd1ac5-2c5f-4be0-92e6-59a18bb5f4a4:
+    uuid: 9efd1ac5-2c5f-4be0-92e6-59a18bb5f4a4
+    id: image_crop
+    weight: 2
     data:
       width: 490
       height: 370

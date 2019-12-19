@@ -67,7 +67,7 @@
         if (!$targetTag) {
           return;
         }
-        var childElements = $targetTag.find('img').length;
+        var childElements = $targetTag.find('div.nav-image-wrapper').length;
         if (childElements <= 4) {
           $targetTag.removeClass('slick-track').addClass('slick-track-const');
         }

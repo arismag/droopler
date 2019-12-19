@@ -4,11 +4,11 @@ dependencies: {  }
 name: product_main_image
 label: 'Product Main Image'
 effects:
-  c7593b10-a82b-42c4-ae9d-1bb38c048a5d:
-    uuid: c7593b10-a82b-42c4-ae9d-1bb38c048a5d
-    id: image_scale_and_crop
-    weight: 1
+  ae00edfb-68ec-462f-9eb3-07ac25096d67:
+    uuid: ae00edfb-68ec-462f-9eb3-07ac25096d67
+    id: image_scale
+    weight: 2
     data:
-      width: 740
+      width: null
       height: 410
-      anchor: center-center
+      upscale: false
