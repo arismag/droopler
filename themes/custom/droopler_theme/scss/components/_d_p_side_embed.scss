@@ -65,6 +65,11 @@ $d-p-side-embed-desktop-height: auto !default; // You can set fixed height of em
         width: 600px; // Half of container.
         padding-left: $d-p-side-embed-fields-padding-x;
         padding-right: $d-p-side-embed-fields-padding-x;
+        .field--name-field-d-long-text {
+          h2 {
+            color: $d-p-side-embed-header-color;
+          }
+        }
       }
     }
   }
