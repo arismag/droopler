@@ -805,7 +805,6 @@ function droopler_update_8104() {
     }
   }
 
-  \Drupal::logger('update_migrate_media')->notice($errorsWhileMigrating);
   $values['droopler__droopler_update_8104_4'] = TRUE;
 
   /**
