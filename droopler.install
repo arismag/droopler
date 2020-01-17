@@ -488,30 +488,30 @@ function droopler_update_8103() {
   $configs = [
     'd_content' => [
       'field.field.node.content_page.field_page_section' => '9a1690fe15a13fa505af05b76e793b70',
-        ],
+    ],
     'd_p_banner' => [
       'field.field.paragraph.d_p_banner.field_d_cta_link' => 'a145eaef534859402221c448fd67e3bc',
-      ],
+    ],
     'd_p_side_image' => [
       'field.storage.paragraph.field_d_p_si_image_side' => '453281e79d432694a700dfd68dcb01c6',
       'field.field.paragraph.d_p_side_image.field_d_cta_link' => '1c2228d6bc04287c678335082ad90dd6',
     ],
     'd_p_side_embed' => [
       'field.field.paragraph.d_p_side_embed.field_d_cta_link' => '0be7fbc269f875d507f92dcac8962937',
-      ],
+    ],
     'd_p_side_tiles' => [
       'field.field.paragraph.d_p_side_tiles.field_d_cta_link' => '20cf110a5b5ecb2304b9b68a11d7099c',
-      ],
+    ],
     'd_p_text_blocks' => [
       'field.field.paragraph.d_p_group_of_text_blocks.field_d_p_tb_block_reference' => '5220f02166f380407f4f09f31c95eaac',
       'field.field.paragraph.d_p_group_of_text_blocks.field_d_cta_link' => 'fc72b9cf2dc4bd9b438caf61981a58dc',
     ],
     'd_p_text_paged' => [
       'field.field.paragraph.d_p_text_paged.field_d_cta_link' => '2aedcfb9abed6f5666cccb49ccea5ca4',
-      ],
+    ],
     'd_p_text_with_bckg' => [
       'field.field.paragraph.d_p_text_with_bckg.field_d_cta_link' => 'fab446abaff342dadba04d9d564804cf',
-      ],
+    ],
   ];
   $values['droopler__droopler_update_8103_4'] = $updater->importConfigs($configs);
 
@@ -523,12 +523,12 @@ function droopler_update_8103() {
       //'simple_sitemap.settings' => '38979e56edc0ee9369928a174dbc5578',
       //'user.role.anonymous' => '4ea4b28e3275b7add9c389aec75a5216',
       //'user.role.authenticated' => 'ca382ea635e3da6144322e05e5c3f4a8',
-      'taxonomy.vocabulary.tags' => '43f9e4a277457349d58cedb7bbe1dc76',
+      'taxonomy.vocabulary.tags' => 'a8e29915b68d9ff1e4d2e587472f0411',
     ],
     'd_content' => [
       'core.entity_view_display.node.content_page.d_small_box' => '',
       'simple_sitemap.bundle_settings.default.node.content_page' => '',
-      'metatag.metatag_defaults.node__content_page' => 'e6d4f236df5d84f031d8edf6acfcd6da',
+      'metatag.metatag_defaults.node__content_page' => '51026c0870dce6adfd52d68b047936d0',
     ],
     'd_p_subscribe_file' => [
       'views.view.subscribe_file_paragraph' => '',
@@ -546,17 +546,17 @@ function droopler_update_8103() {
     // Update d_blog config.
     $configs = [
       'd_blog' => [
-        'metatag.metatag_defaults.node__blog_post' => '3e869dc915abd86f66f9b2d46d4fee2a',
+        'metatag.metatag_defaults.node__blog_post' => '0025edc1a8903c7e8469ecaeb71875f9',
         'core.entity_view_display.node.blog_post.d_small_box' => '',
         'core.entity_view_mode.node.teaser_small' => '',
         'core.entity_view_display.node.blog_post.teaser_small' => '',
         'pathauto.pattern.node_blog_pattern' => '',
-        'responsive_image.styles.blog_images_style' => '5fffdeff846e07fe8c2e72f24ffab7f4',
-        'core.entity_view_display.taxonomy_term.blog_posts_category.default' => 'acbf5d2748f47042c1171e66d48d1dc9',
-        'taxonomy.vocabulary.blog_posts_category' => 'f2aa866752d8525f4dda0da49e99953b',
+        'responsive_image.styles.blog_images_style' => '59b94ff831b5521ba444c9c81cf864a8',
+        'core.entity_view_display.taxonomy_term.blog_posts_category.default' => 'cd2179b7b383ea8b42e3921348b62f7c',
+        'taxonomy.vocabulary.blog_posts_category' => '286f4a1e6a13ee4c456b5932964216ce',
         'simple_sitemap.bundle_settings.default.node.blog_post' => '',
-        'field.field.node.blog_post.field_blog_sections' => '1f6100447b6fff05e8b60f6f23cfaea5',
-        'views.view.blog_listing' => 'e617972f67997f8d8f4c60eb29f49bd2',
+        'field.field.node.blog_post.field_blog_sections' => 'a6cf7b574bb813aa22f7bf07e089e15a',
+        'views.view.blog_listing' => 'ef937316b945c52ba62008e8314c7776',
       ],
     ];
     $values['droopler__droopler_update_8103_6'] = $updater->importConfigs($configs);
@@ -569,19 +569,18 @@ function droopler_update_8103() {
     // Update d_product config.
     $configs = [
       'd_product' => [
-        'field.field.node.d_product.field_page_section' => 'b691ac5762c4b87ed40f125f1772d7c1',
+        'field.field.node.d_product.field_page_section' => '',
         'field.field.node.d_product.body' => '86148679c204177206e4aa1c7976a533',
-        'views.view.product_images' => 'e72d8ee10d2d1192ce439c1fdd7287cf',
-        'views.view.products_list' => '44b33ce68241349845d74959c90e5b72',
-        'taxonomy.vocabulary.d_product_categories' => 'bb47ec12d4ea223256d81c442cde2783',
-        'simple_sitemap.bundle_settings.node.d_product' => 'f8dcc16f0e902d016eb25ba28c27666c',
-        'block.block.exposedformproducts_listproducts_list' => '64a616778f4788996d6f5ee44722a0ae',
-        // todo: The updates below must be carefully tested, they can break existing sites (due to moved configs).
-        'block.block.mobilefilterssubmit' => 'cf04a4ce3efb8e1db0594b00949644a2',
-        'block.block.productcategoriestaxonomytermname' => '791b0420b472bb813403557acb2514c1',
-        'block.block.resetfilters_2' => 'f45e47fc43e155355fbdffa3fd1c5173',
-        'block.block.resetfilters' => '978cbc78d2875b9ec252b91b0347900d',
-        'block.block.tagstaxonomytermname' => '419c970f6ffd428be18f995df7b6c097',
+        'views.view.product_images' => 'd3d8b4938b464212d81a4ae08c60d54c',
+        'views.view.products_list' => 'e72d8ee10d2d1192ce439c1fdd7287cf',
+        'taxonomy.vocabulary.d_product_categories' => '244e4b61dda06b0290449488d97c6c1b',
+        'simple_sitemap.bundle_settings.node.d_product' => '854fb990fa532fa6ac8200d8161e44e7',
+        'block.block.exposedformproducts_listproducts_list' => 'ea39d74f901a0adb45d19bfa298f39fa',
+        'block.block.mobilefilterssubmit' => 'b026df2741fc999f2c44a2d69f35ebbd',
+        'block.block.productcategoriestaxonomytermname' => '2fccf0cef7aefb201d9770096be6f08f',
+        'block.block.resetfilters_2' => '50869d4a64e21ce3560e4848b4fba666',
+        'block.block.resetfilters' => '2fdeb0ff031e0a500f81193fc3856f23',
+        'block.block.tagstaxonomytermname' => 'a0cdc791512d164456e0386e97f3ba18',
       ],
     ];
     $values['droopler__droopler_update_8103_7'] = $updater->importConfigs($configs);
