@@ -34,8 +34,7 @@ class ConfigCompare {
     unset($config['langcode']);
     unset($config['_core']);
     $config_string = serialize($config);
-    \Drupal::logger('hashComparator')
-      ->notice('serialized ' . $config_name . ' config: ' . $config_string);
+
     return md5($config_string);
   }
 
