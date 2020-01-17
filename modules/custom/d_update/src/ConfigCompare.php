@@ -32,8 +32,10 @@ class ConfigCompare {
     unset($config['uuid']);
     unset($config['lang']);
     unset($config['langcode']);
+    unset($config['_core']);
     $config_string = serialize($config);
-
+    \Drupal::logger('hashComparator')
+      ->notice('serialized ' . $config_name . ' config: ' . $config_string);
     return md5($config_string);
   }
 
@@ -58,4 +60,26 @@ class ConfigCompare {
     }
   }
 
+  /**
+   * Generates hashes from config array, saves hashes into file.
+   *
+   * @param array $configs
+   *   Array of configs.
+   * @param string $filename
+   *   Filename to save config under without extension.
+   */
+  public function massProduceHashes(array $configs, string $filename) {
+    $file = fopen('/app/app/' . $filename . '.txt', 'w');
+    fwrite($file, '[');
+    foreach ($configs as $moduleName => $moduleConfigs) {
+      fwrite($file, "'" . $moduleName . "' => [");
+      foreach ($moduleConfigs as $configName => $arrayHash) {
+        $newHash = $this->generateHashFromDatabase($configName);
+        fwrite($file, "'" . $configName . "' =>'" . $newHash . "',");
+      }
+      fwrite($file, '],');
+    }
+    fwrite($file, '];');
+    fclose($file);
+  }
 }

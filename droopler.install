@@ -157,8 +157,7 @@ function droopler_enable_subtheme() {
 
     // Additional operations after subtheme installation.
     droopler_enable_subtheme_postprocess();
-  }
-  catch (Exception $e) {
+  } catch (Exception $e) {
     \Drupal::logger('droopler_install')->notice('No subtheme detected.');
   }
 }
@@ -233,8 +232,7 @@ function droopler_update_8102() {
     $result = $module_installer->install($modules, TRUE);
     $values['droopler__droopler_update_8102_0'] = $result;
     $values['droopler__droopler_update_8102_1'] = $result;
-  }
-  catch (MissingDependencyException $e) {
+  } catch (MissingDependencyException $e) {
     $values['droopler__droopler_update_8102_0'] = FALSE;
     $values['droopler__droopler_update_8102_1'] = FALSE;
   }
@@ -327,8 +325,7 @@ function droopler_update_8102() {
     $result = $module_installer->install($modules, TRUE);
     $values['droopler__droopler_update_8102_5'] = $result;
     $values['droopler__droopler_update_8102_6'] = $result;
-  }
-  catch (MissingDependencyException $e) {
+  } catch (MissingDependencyException $e) {
     $values['droopler__droopler_update_8102_5'] = FALSE;
     $values['droopler__droopler_update_8102_6'] = FALSE;
   }
@@ -379,8 +376,7 @@ function droopler_update_8103() {
     ];
     $result = $module_installer->install($modules, TRUE);
     $values['droopler__droopler_update_8103_0'] = $result;
-  }
-  catch (MissingDependencyException $e) {
+  } catch (MissingDependencyException $e) {
     $values['droopler__droopler_update_8103_0'] = FALSE;
   }
   // Import new configs for d_p.
@@ -415,8 +411,7 @@ function droopler_update_8103() {
       'd_update',
     ]);
     $values['droopler__droopler_update_8103_1'] = $module_installer->install($modules, TRUE);
-  }
-  catch (MissingDependencyException $e) {
+  } catch (MissingDependencyException $e) {
     $values['droopler__droopler_update_8103_1'] = FALSE;
   }
 
@@ -431,8 +426,7 @@ function droopler_update_8103() {
     ];
     $result = $module_installer->install($modules, TRUE);
     $values['droopler__droopler_update_8103_2'] = $result;
-  }
-  catch (MissingDependencyException $e) {
+  } catch (MissingDependencyException $e) {
     $values['droopler__droopler_update_8103_2'] = FALSE;
   }
 
@@ -493,31 +487,31 @@ function droopler_update_8103() {
   // Update existing fields.
   $configs = [
     'd_content' => [
-      'field.field.node.content_page.field_page_section' => '43d9f25fcb0715eea8a9465388491269',
-    ],
+      'field.field.node.content_page.field_page_section' => '9a1690fe15a13fa505af05b76e793b70',
+        ],
     'd_p_banner' => [
-      'field.field.paragraph.d_p_banner.field_d_cta_link' => '63fe174a22c312e28faf3bc9fa41ce44',
-    ],
+      'field.field.paragraph.d_p_banner.field_d_cta_link' => 'a145eaef534859402221c448fd67e3bc',
+      ],
     'd_p_side_image' => [
-      'field.storage.paragraph.field_d_p_si_image_side' => '5d36513453cc08e7d015d68929ecddfc',
-      'field.field.paragraph.d_p_side_image.field_d_cta_link' => 'ce47d9abef098da38cc53064c01d06d6',
+      'field.storage.paragraph.field_d_p_si_image_side' => '453281e79d432694a700dfd68dcb01c6',
+      'field.field.paragraph.d_p_side_image.field_d_cta_link' => '1c2228d6bc04287c678335082ad90dd6',
     ],
     'd_p_side_embed' => [
-      'field.field.paragraph.d_p_side_embed.field_d_cta_link' => '336654b916fc757f3af30239dc2d4976',
-    ],
+      'field.field.paragraph.d_p_side_embed.field_d_cta_link' => '0be7fbc269f875d507f92dcac8962937',
+      ],
     'd_p_side_tiles' => [
-      'field.field.paragraph.d_p_side_tiles.field_d_cta_link' => 'ac8fc9a194d17951a86e0a68371c12bb',
-    ],
+      'field.field.paragraph.d_p_side_tiles.field_d_cta_link' => '20cf110a5b5ecb2304b9b68a11d7099c',
+      ],
     'd_p_text_blocks' => [
-      'field.field.paragraph.d_p_group_of_text_blocks.field_d_p_tb_block_reference' => '97dd017b20ad8add96ea20e13bbdea39',
-      'field.field.paragraph.d_p_group_of_text_blocks.field_d_cta_link' => '12e9dbc1863b7bddb7cb6632b1a6d361',
+      'field.field.paragraph.d_p_group_of_text_blocks.field_d_p_tb_block_reference' => '5220f02166f380407f4f09f31c95eaac',
+      'field.field.paragraph.d_p_group_of_text_blocks.field_d_cta_link' => 'fc72b9cf2dc4bd9b438caf61981a58dc',
     ],
     'd_p_text_paged' => [
-      'field.field.paragraph.d_p_text_paged.field_d_cta_link' => 'ffda0c55cb64b91f1109971f67185970',
-    ],
+      'field.field.paragraph.d_p_text_paged.field_d_cta_link' => '2aedcfb9abed6f5666cccb49ccea5ca4',
+      ],
     'd_p_text_with_bckg' => [
-      'field.field.paragraph.d_p_text_with_bckg.field_d_cta_link' => '27dca2ddd6b10a8cff0ec8c787c3dd9f',
-    ],
+      'field.field.paragraph.d_p_text_with_bckg.field_d_cta_link' => 'fab446abaff342dadba04d9d564804cf',
+      ],
   ];
   $values['droopler__droopler_update_8103_4'] = $updater->importConfigs($configs);
 
@@ -606,7 +600,7 @@ function droopler_update_8103() {
     $values['droopler__droopler_update_8103_8'] = $updater->importConfigs($configs);
 
     if (\Drupal::service('theme_handler')
-      ->getDefault() === 'droopler_subtheme') {
+        ->getDefault() === 'droopler_subtheme') {
       $updater->instantiateBlocksForSubtheme('droopler_subtheme', $configs);
     }
   }
