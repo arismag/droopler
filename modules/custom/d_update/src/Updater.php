@@ -435,13 +435,13 @@ class Updater {
    *   Name of config to modify.
    * @param array $newConfig
    *   Array containing changes to apply.
-   * @param array $expectedConfig
+   * @param array|null $expectedConfig
    *   Array containing expected config values.
    *
    * @return bool
    *   Return if the config was changed successfully.
    */
-  private function modifyConfig($configName, array $newConfig, array $expectedConfig = NULL) {
+  private function modifyConfig($configName, array $newConfig, $expectedConfig = NULL) {
     $config = $this->configFactory->getEditable($configName);
     $configData = $config->get();
     if (empty($configData)) {
